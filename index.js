@@ -12,9 +12,7 @@ for (item of number) {
     item.addEventListener('click', (e) => {
         buttonText = e.target.innerText;
 
-        if (buttonText != '=' && buttonText != 'CE') {
-            historyValue += buttonText;
-        }
+        
 
         if (buttonText === 'X') {
             buttonText = '*';
@@ -26,6 +24,9 @@ for (item of number) {
             }
             else{
                 screenValue+=buttonText;
+                if (buttonText != '=' && buttonText != 'CE') {
+                    historyValue += buttonText;
+                }
             }
             screen.value = screenValue;
         }
@@ -54,6 +55,9 @@ for (item of number) {
             }
             else{
                 screenValue+=buttonText;
+                if (buttonText != '=' && buttonText != 'CE') {
+                    historyValue += buttonText;
+                }
             }
             screen.value = screenValue;
         }

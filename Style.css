@@ -9,6 +9,15 @@
     align-items: center;
     justify-content: center;
 }
+.dateDiv{
+    width: 150px;
+    line-height: 40px;
+    text-align: center;
+    font-size: large;
+    color: #fcba03;
+    background-color: black;
+    border-radius: 50px;
+}
 .calculator{
     display: inline-block;
     background-color: black;
